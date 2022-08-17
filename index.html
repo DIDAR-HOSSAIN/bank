@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Central Bank</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    <h1 class="text-3xl">login Panel</h1>
+    <header>
+        <h1 class="text-3xl text-center mt-5 text-teal-500 mb-5">Login Panel</h1>
+    </header>
 
+    <main>
+        <section class="bg-green-300 w-9/12 mx-auto">
+            <div class="px-5">
+                <h1 class="text-3xl mb-2">Please Login</h1>
+                <input type="email" id="email-field" name="" placeholder="Input Email Here" class="text-teal-500 block w-9/12">
+                <input type="password" id="password-field" name="" placeholder="Input Valid Password" class="text-teal-500 block mt-5 w-9/12 mb-2 ">
+                <button class="text-teal-500 bg-red-300 rounded p hover:bg-sky-700 px-3.5" id="btn-submit">Submit</button>
+            </div>
+        </section>
+    </main>
 
 
     <script src="js/deposit.js"></script>

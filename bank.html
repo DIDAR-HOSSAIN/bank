@@ -5,16 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Central Bank</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    <h1>lo</h1>
+    <header>
+        <h1 class="text-3xl text-center mt-5 text-teal-500 mb-5">Transaction Dashboard</h1>
+    </header>
 
+    <main>
+        <section class="">
+            <div class="grid grid-cols-3 gap-4 mx-auto text-white">
+                <div class="bg-green-300 p-10">
+                    <h3>Deposit</h3>
+                    <h4>$<span id="deposit-total">00</span></h4>
+                </div>
+
+                <div class="bg-yellow-300 p-10">
+                    <h3>withdraw</h3>
+                    <h4>$<span id="withdraw-total">00</span></h4>
+                </div>
+
+                <div class="bg-pink-300 p-10">
+                    <h3>Balance</h3>
+                    <h4>$<span id="balance-total">1240</span></h4>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-pink-300  p-8">
+                    <h3>Please Deposit</h3>
+                    <input id="deposit-field" type="text" class="block" name="" placeholder="$ Amount You Want to deposit">
+                    <button id="btn-deposit" class="bg-sky-700 mt-2 rounded hover:bg-red-700 px-4">Deposit</button>
+                </div>
+
+                <div class="bg-sky-300  p-8">
+                    <h3>Please Withdraw</h3>
+                    <input type="text" class="block" id="withdraw-field" name="" placeholder="$ Amount You Want to Withdraw">
+                    <button class="bg-sky-700 mt-2 rounded hover:bg-red-700 px-4" id="btn-withdraw">Withdraw</button>
+                </div>
+
+
+            </div>
+            
+        </section>
+    </main>
 
 
     <script src="js/deposit.js"></script>
-    <script src="js/withdraw.js"></script>
-    <script src="js/login.js"></script>
+    <!-- <script src="js/withdraw.js"></script> -->
+    <!-- <script src="js/login.js"></script> -->
 </body>
 </html>
